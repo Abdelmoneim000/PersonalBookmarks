@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="text-center">Select Platform and Enter Credentials</h1>
+<form method="POST" action="/start-scraping" id="scraping-form">
+    <div class="mb-3">
+        <label for="platform" class="form-label">Platform</label>
+        <select class="form-select" id="platform" name="platform">
+            <option value="Instagram">Instagram</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required placeholder="Enter your username or email">
+    </div>    
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Start Scraping</button>
+</form>
+
+<script>
+    const form = document.getElementById("scraping-form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch("/start-scraping", {
+            method: "POST",
+            body: new FormData(form)
+        }).then(response => response.json()).then(data => {
+            if (data.status === "scraping_started") {
+                alert("Scraping has started. You will be notified when it's complete.");
+            }
+        });
+    });
+</script>
+{% endblock %}

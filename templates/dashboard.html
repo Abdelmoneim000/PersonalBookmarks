@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="text-center">Dashboard</h1>
+<div class="text-center mb-3">
+    <a href="/" class="btn btn-success">Add Another Platform</a>
+</div>
+<div>
+    {% for platform, data in user_data.items() %}
+        <h2>{{ platform }}</h2>
+        <ul>
+            {% for item in data %}
+                <li><a href="{{ item }}" target="_blank">{{ item }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+{% endblock %}

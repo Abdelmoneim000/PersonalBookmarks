@@ -1,0 +1,13 @@
+1732590059797	geckodriver	INFO	Listening on 127.0.0.1:49329
+1732590059862	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "38029" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTyn4Lq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732590060985	Marionette	INFO	Marionette enabled
+1732590061444	Marionette	INFO	Listening on port 42331
+Read port: 42331
+WebDriver BiDi listening on ws://127.0.0.1:38029
+1732590061879	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+1732590068702	Marionette	INFO	Stopped listening on port 42331
+1732590068803	geckodriver::marionette	ERROR	Failed to close browser connection: unknown error
+[ERROR glean_core] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }

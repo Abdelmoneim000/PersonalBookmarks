@@ -85,8 +85,8 @@ def main():
 
     Replace 'username' and 'password' with actual Facebook credentials.
     """
-    USERNAME = "01032296137"
-    PASSWORD = "Ha1711@@"
+    USERNAME = "your_username"
+    PASSWORD = "your_password"
     UNWANTED_KEYWORDS = ["مجموعاتي", "للاستخدام لاحقًا", "إنشاء مجموعة جديدة", "إضافة إلى المجموعة"]
 
     scraper = FacebookScraper(USERNAME, PASSWORD)

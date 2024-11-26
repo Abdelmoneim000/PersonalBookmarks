@@ -1,0 +1,484 @@
+1732562651354	geckodriver	INFO	Listening on 127.0.0.1:59411
+1732562651411	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "43361" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilece2tST"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732562652500	Marionette	INFO	Marionette enabled
+1732562653002	Marionette	INFO	Listening on port 35671
+Read port: 35671
+WebDriver BiDi listening on ws://127.0.0.1:43361
+1732562653179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+1732562668556	Marionette	INFO	Stopped listening on port 35671
+1732564756221	geckodriver	INFO	Listening on 127.0.0.1:33733
+1732564756281	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "55461" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepYUweH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732564757250	Marionette	INFO	Marionette enabled
+1732564757653	Marionette	INFO	Listening on port 41815
+WebDriver BiDi listening on ws://127.0.0.1:55461
+Read port: 41815
+1732564758077	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732564870381	geckodriver	INFO	Listening on 127.0.0.1:36849
+1732564870440	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "43769" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekYRYZl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732564871464	Marionette	INFO	Marionette enabled
+1732564871833	Marionette	INFO	Listening on port 34109
+Read port: 34109
+WebDriver BiDi listening on ws://127.0.0.1:43769
+1732564872259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/QMj9sEu41DG.js, line 42: Script terminated by timeout at:
+b/<@https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/QMj9sEu41DG.js:42:271
+a@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:320:191
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:70:10628
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:227:528
+j@https://static.xx.fbcdn.net/rsrc.php/v3ij9m4/yF/l/en_GB/0g9ACyquZNC.js:29:355
+k@https://static.xx.fbcdn.net/rsrc.php/v3ij9m4/yF/l/en_GB/0g9ACyquZNC.js:29:603
+d/<@https://static.xx.fbcdn.net/rsrc.php/v3ij9m4/yF/l/en_GB/0g9ACyquZNC.js:29:1214
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:70:10628
+b.$5@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:83:1000
+a.$5@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:83:3068
+c@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:83:715
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:70:10628
+c.__emitToSubscription@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:79:1477
+c.emit@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:79:1303
+b.emitAndHold@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:81:1043
+b.inform@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:83:1663
+a.inform@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:83:2681
+l/window.onunload<@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:321:867
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:70:10628
+d@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:327:2086
+
+1732564877065	Marionette	INFO	Stopped listening on port 41815
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js, line 276: Script terminated by timeout at:
+a/<@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:276:113
+
+1732565066772	Marionette	INFO	Stopped listening on port 34109
+1732565078949	geckodriver	INFO	Listening on 127.0.0.1:48961
+1732565079024	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "37583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVIOLgV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732565080034	Marionette	INFO	Marionette enabled
+1732565080428	Marionette	INFO	Listening on port 34689
+WebDriver BiDi listening on ws://127.0.0.1:37583
+Read port: 34689
+1732565080973	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iSX44/yP/l/rt/aCkAxl4CCdoRcUrBhGlkbDKypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-CVaSfZQ73f_tNIqOPaN39OG3_MOl6yDxpTsTB1G07Q8eoNarx7CUuz981Ww2JbsEdfh07KFZAQo5C_86bpKbjAvTBX0wfdauNtjNBeCFrnwVeuAVqFyMA-Y7CGLqaa7G-NO2N7h3IGrBN5oF1sFYfNfZ9hIEIZq7FYRoPQM6JZ9GgJeRKoT3etwX5ddcpMKaUhgiK_0JL1BATH_Bu-MRwrxMXFUAFbUqQQ5-pYyuFqK2iUJdYQPN5a7L10xR0wTqBI51NldK.js?_nc_eui2=AeFteBwx9hwemkBm1FfyLGcVA4JyM1XoHH0DgnIzVegcfbBO3BchRUhD4pd4wg-5rxAT66gX9TtYH7JQmY5W05tE, line 115: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v4/yx/l/1,cross/xEDVdDCqUTBGe0m29o7FrSBCc-LLfOWtulSdFbf1EP1G.css?_nc_eui2=AeFhgVmGDaNZDw5cIrg5l1Q-apqDQ2lVtz1qmoNDaVW3Pak48Lg7cqMZmeoHqph8LghUOVlaLFtstbfWSvgHF5eb, using system principal instead."
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getLayout failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:183:36\nupdateBoxModel@resource://devtools/client/inspector/boxmodel/box-model.js:223:18\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonReflowInSelection@resource://devtools/client/inspector/inspector.js:1614:10\n_notifyWatchers@resource://devtools/shared/commands/resource/resource-command.js:1052:24\nthrottledFunction@resource://devtools/shared/throttle.js:50:21\n_onResourceAvailableArray@resource://devtools/shared/commands/resource/resource-command.js:777:12\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonPacket@resource://devtools/shared/protocol/Front.js:348:13\nonPacket@resource://devtools/client/devtools-client.js:458:13\nsend/<@resource://devtools/shared/transport/local-transport.js:73:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type isPositionEditable failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:195:50\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getLayout failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:183:36\nupdateBoxModel@resource://devtools/client/inspector/boxmodel/box-model.js:223:18\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonReflowInSelection@resource://devtools/client/inspector/inspector.js:1614:10\n_notifyWatchers@resource://devtools/shared/commands/resource/resource-command.js:1052:24\nthrottledFunction@resource://devtools/shared/throttle.js:50:21\n_onResourceAvailableArray@resource://devtools/shared/commands/resource/resource-command.js:777:12\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonPacket@resource://devtools/shared/protocol/Front.js:348:13\nonPacket@resource://devtools/client/devtools-client.js:458:13\nsend/<@resource://devtools/shared/transport/local-transport.js:73:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getLayout failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:183:36\nupdateBoxModel@resource://devtools/client/inspector/boxmodel/box-model.js:223:18\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonReflowInSelection@resource://devtools/client/inspector/inspector.js:1614:10\n_notifyWatchers@resource://devtools/shared/commands/resource/resource-command.js:1052:24\nthrottledFunction@resource://devtools/shared/throttle.js:50:21\n_onResourceAvailableArray@resource://devtools/shared/commands/resource/resource-command.js:777:12\n_emit@resource://devtools/shared/event-emitter.js:242:32\nemit@resource://devtools/shared/event-emitter.js:186:18\nemit@resource://devtools/shared/event-emitter.js:330:18\nonPacket@resource://devtools/shared/protocol/Front.js:348:13\nonPacket@resource://devtools/client/devtools-client.js:458:13\nsend/<@resource://devtools/shared/transport/local-transport.js:73:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: (new Error("Connection closed, pending request to server0.conn0.process3//pagestyle26, type getApplied failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:299:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetApplied@resource://devtools/client/fronts/page-style.js:61:29\nupdateBoxModel/lastRequest<@resource://devtools/client/inspector/boxmodel/box-model.js:187:44\n", "resource://devtools/shared/protocol/Front.js", 105))
+console.error: "Unable to find target with innerWindowId:6442450946"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'isPositionEditable' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1732565372691	Marionette	INFO	Stopped listening on port 34689
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "
+1732571643934	geckodriver	INFO	Listening on 127.0.0.1:36575
+1732571643987	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "42707" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileR9ivR4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732571644979	Marionette	INFO	Marionette enabled
+1732571645331	Marionette	INFO	Listening on port 34893
+WebDriver BiDi listening on ws://127.0.0.1:42707
+Read port: 34893
+1732571645846	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3isio4/yQ/l/rt/G8NQz011aPyiXTsT147rP4iQZA0P5UoCvWUuJGd98C2F42a8PVdXR-v9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzHk5PZ4FuffJebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfo3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_KypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y.js?_nc_eui2=AeFabrlMmagRzsplD7yGX_ap8tOEZ5LHMb3y04RnkscxvVAZ1W-rWhi-OzQt7nOfXyaof_Nd5K9owJ7BfVuRcNhw, line 1288: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yI/l/rt/G8NQz011aPyiXTsT147rP4iQZA0P5UoCvWUuJGd98C2F42a8PVdXR-v9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzHk5PZ4FuffJebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDKypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeHpTNJpJ7c4d0QpPJyC_1tFAQ_J2kWaUrEBD8naRZpSsRO-Jy1DOGrPiSeYk29Mb-9CiP0-nO2zCMD4I-mAAcTe, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+1732572086053	Marionette	INFO	Stopped listening on port 34893
+1732572124569	geckodriver	INFO	Listening on 127.0.0.1:34375
+1732572124629	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "59935" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1GU68v"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732572125569	Marionette	INFO	Marionette enabled
+1732572125966	Marionette	INFO	Listening on port 44909
+WebDriver BiDi listening on ws://127.0.0.1:59935
+Read port: 44909
+1732572126439	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ieXe4/yV/l/rt/KypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-MrNMQu89CCQtNIqOPaN39OG3_MOl6yDxp8YVzPqbJOsCTsTB1G07Q8eoNarx7CUuz981Ww2JbsEdfh07KFZAQo5C_86bpKbjAvTBX0wfdauNtjQK15xtRY2SWNBeCFrnwVeuAVqFyMA-Y7CGLqaa7G-NO2N7h3IGrBN5oQM6JZ9GgJeRKoT3etwX5ddcpMKaUhgiK_-MRwrxMXFUAfZCPA7DVI-hU6AqtpzxNmWuFqK2iUJdYQWaC0rwsUhuuPN5a7L10xR0wTqBI51NldKk7MerhR94lL.js?_nc_eui2=AeEOepQ3hITUESyuGQjB5kD-ozdd2AWRJg-jN13YBZEmD3Az-pEEqQeIOU2sChObWIw5j2qeTemtQOVQWrgK37GI, line 75: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+1732572172840	Marionette	INFO	Stopped listening on port 44909
+1732572201308	geckodriver	INFO	Listening on 127.0.0.1:43999
+1732572201364	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "51341" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile809RmL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732572202378	Marionette	INFO	Marionette enabled
+1732572202716	Marionette	INFO	Listening on port 43753
+WebDriver BiDi listening on ws://127.0.0.1:51341
+Read port: 43753
+1732572203235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9gc4/y_/l/rt/KypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-MrNMQu89CCQtNIqOPaN39OG3_MOl6yDxpTsTB1G07Q8eoNarx7CUuz981Ww2JbsEdfh07KFZAQo5C_86bpKbjAvTBX0wfdauNtjNBeCFrnwVeuAVqFyMA-Y7CGLqaa7G-NO2N7h3IGrBN5oIEIZq7FYRoPQM6JZ9GgJeRKoT3etwX5ddcpMKaUhgiK_-MRwrxMXFUAFbUqQQ5-pYyU6AqtpzxNmWuFqK2iUJdYQWaC0rwsUhuuPN5a7L10xR0wTqBI51NldKk7MerhR94lLOU9N1oTpVkw.js?_nc_eui2=AeFmM4oYr1zFzvSWn9FLo-b1u5KYL5Bzniy7kpgvkHOeLJGnhDA_cILfw84s9fNwrL0JDaReyrQnckO0-cliFO9Z, line 75: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yI/l/rt/G8NQz011aPyiXTsT147rP4iQZA0P5UoCvWUuJGd98C2F42a8PVdXR-v9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzHk5PZ4FuffJebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDKypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeHpTNJpJ7c4d0QpPJyC_1tFAQ_J2kWaUrEBD8naRZpSsRO-Jy1DOGrPiSeYk29Mb-9CiP0-nO2zCMD4I-mAAcTe, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732572443397	Marionette	INFO	Stopped listening on port 43753
+1732572469568	geckodriver	INFO	Listening on 127.0.0.1:40259
+1732572469623	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "33465" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileh7Ql9e"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732572470736	Marionette	INFO	Marionette enabled
+1732572471080	Marionette	INFO	Listening on port 43507
+WebDriver BiDi listening on ws://127.0.0.1:33465
+Read port: 43507
+1732572471610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9gc4/y_/l/rt/KypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-MrNMQu89CCQtNIqOPaN39OG3_MOl6yDxpTsTB1G07Q8eoNarx7CUuz981Ww2JbsEdfh07KFZAQo5C_86bpKbjAvTBX0wfdauNtjNBeCFrnwVeuAVqFyMA-Y7CGLqaa7G-NO2N7h3IGrBN5oIEIZq7FYRoPQM6JZ9GgJeRKoT3etwX5ddcpMKaUhgiK_-MRwrxMXFUAFbUqQQ5-pYyU6AqtpzxNmWuFqK2iUJdYQWaC0rwsUhuuPN5a7L10xR0wTqBI51NldKk7MerhR94lLOU9N1oTpVkw.js?_nc_eui2=AeFmM4oYr1zFzvSWn9FLo-b1u5KYL5Bzniy7kpgvkHOeLJGnhDA_cILfw84s9fNwrL0JDaReyrQnckO0-cliFO9Z, line 75: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+1732572539150	Marionette	INFO	Stopped listening on port 43507
+1732572697003	geckodriver	INFO	Listening on 127.0.0.1:41065
+1732572697058	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "46245" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilefpEZpF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732572697973	Marionette	INFO	Marionette enabled
+1732572698384	Marionette	INFO	Listening on port 43475
+WebDriver BiDi listening on ws://127.0.0.1:46245
+Read port: 43475
+1732572698878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+1732572739661	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1732572746935	Marionette	INFO	Stopped listening on port 43475
+1732572752272	geckodriver	INFO	Listening on 127.0.0.1:42671
+1732572752327	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "44731" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledRsnF3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732572753261	Marionette	INFO	Marionette enabled
+1732572753655	Marionette	INFO	Listening on port 41471
+WebDriver BiDi listening on ws://127.0.0.1:44731
+Read port: 41471
+1732572754214	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yI/l/rt/G8NQz011aPyiXTsT147rP4iQZA0P5UoCvWUuJGd98C2F42a8PVdXR-v9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzHk5PZ4FuffJebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDKypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeHpTNJpJ7c4d0QpPJyC_1tFAQ_J2kWaUrEBD8naRZpSsRO-Jy1DOGrPiSeYk29Mb-9CiP0-nO2zCMD4I-mAAcTe, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732573364770	Marionette	INFO	Stopped listening on port 41471
+1732573447541	geckodriver	INFO	Listening on 127.0.0.1:53697
+1732573447594	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "33095" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepSENx0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732573448541	Marionette	INFO	Marionette enabled
+1732573448915	Marionette	INFO	Listening on port 40451
+WebDriver BiDi listening on ws://127.0.0.1:33095
+Read port: 40451
+1732573449511	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yI/l/rt/G8NQz011aPyiXTsT147rP4iQZA0P5UoCvWUuJGd98C2F42a8PVdXR-v9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzHk5PZ4FuffJebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDKypvHdCnOWez9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeHpTNJpJ7c4d0QpPJyC_1tFAQ_J2kWaUrEBD8naRZpSsRO-Jy1DOGrPiSeYk29Mb-9CiP0-nO2zCMD4I-mAAcTe, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732573539752	Marionette	INFO	Stopped listening on port 40451
+1732579479366	geckodriver	INFO	Listening on 127.0.0.1:53701
+1732579479426	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "42037" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJbPh4C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732579480491	Marionette	INFO	Marionette enabled
+1732579480937	Marionette	INFO	Listening on port 43511
+WebDriver BiDi listening on ws://127.0.0.1:42037
+Read port: 43511
+1732579481599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yl/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDHFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeFFp18PQFAYIttFIL-kOVLwrP6aUMyPEYas_ppQzI8RhiC3vJiuKbsKk4ygwQIISNTrtkOefbEFtYvm4uBwwoWJ, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732579525628	Marionette	INFO	Stopped listening on port 43511
+1732579622711	geckodriver	INFO	Listening on 127.0.0.1:50811
+1732579622766	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "53949" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUW6nBW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732579623840	Marionette	INFO	Marionette enabled
+1732579624256	Marionette	INFO	Listening on port 34969
+Read port: 34969
+WebDriver BiDi listening on ws://127.0.0.1:53949
+1732579624430	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i3vq4/yP/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfo3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_HFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1YqrFs9TtoaSL3_qwTV3WjC-.js?_nc_eui2=AeFktgXJujWMTFGAnrqrEmuZF7fqc5n2FqYXt-pzmfYWplTLEglJ4w86v7DG2NaM8Pbg1FPb_KRYpoF2jJxW6O9t, line 1288: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yl/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDHFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeFFp18PQFAYIttFIL-kOVLwrP6aUMyPEYas_ppQzI8RhiC3vJiuKbsKk4ygwQIISNTrtkOefbEFtYvm4uBwwoWJ, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732579666451	Marionette	INFO	Stopped listening on port 34969
+console.error: services.settings: 
+  main/search-telemetry-v2 Signature failed  [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 133"  data: no]
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 133
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":31,"lineNumber":133,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":30,"lineNumber":266,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":30,"lineNumber":217,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"_validateCollectionSignature","sourceId":28,"lineNumber":1009,"columnNumber":47,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"_importChanges","sourceId":28,"lineNumber":1088,"columnNumber":20,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20\n","nativeSavedFrame":{}},"formattedStack":"_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:133:11\nfetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:133:11|fetch/<@resource://services-settings/Utils.sys.mjs:266:15|fetch@resource://services-settings/Utils.sys.mjs:217:12|_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47|_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1088:20|
+  - prototype Object
+console.warn: services.settings: main/password-rules sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: security-state/cert-revocations sync interrupted by shutdown
+console.warn: services.settings: security-state/intermediates sync interrupted by shutdown
+console.warn: services.settings: security-state/onecrl sync interrupted by shutdown
+console.error: ({details:{id:"dd040ff6-583c-d16b-2816-5d8079aba996", last_modified:1731429440245, bucket:"main", collection:"search-telemetry-v2", host:"firefox.settings.services.mozilla.com"}})
+1732579936583	geckodriver	INFO	Listening on 127.0.0.1:45031
+1732579936644	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "50501" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqUghUT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732579937720	Marionette	INFO	Marionette enabled
+1732579938094	Marionette	INFO	Listening on port 42313
+WebDriver BiDi listening on ws://127.0.0.1:50501
+Read port: 42313
+1732579938726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i3vq4/yP/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfo3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_HFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1YqrFs9TtoaSL3_qwTV3WjC-.js?_nc_eui2=AeFktgXJujWMTFGAnrqrEmuZF7fqc5n2FqYXt-pzmfYWplTLEglJ4w86v7DG2NaM8Pbg1FPb_KRYpoF2jJxW6O9t, line 1288: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yX/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDHFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-0kM003OIQ7c.js?_nc_eui2=AeG1uSQnGPNcCY9xAEG7tQU99TDNrJEHwZ31MM2skQfBnVs82PuZE9As9EDXsOzH7fYd_kaw6PQYj7_V8wYjtlfy, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732579978343	Marionette	INFO	Stopped listening on port 42313
+1732580359059	geckodriver	INFO	Listening on 127.0.0.1:41343
+1732580359140	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "55879" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevMOXxj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732580360209	Marionette	INFO	Marionette enabled
+1732580360580	Marionette	INFO	Listening on port 40791
+WebDriver BiDi listening on ws://127.0.0.1:55879
+Read port: 40791
+1732580361279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732580390908	Marionette	INFO	Stopped listening on port 40791
+console.warn: services.settings: blocklists/gfx sync interrupted by shutdown
+console.warn: services.settings: blocklists/addons-bloomfilters sync interrupted by shutdown
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.warn: services.settings: main/sites-classification sync interrupted by shutdown
+console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
+console.warn: services.settings: main/public-suffix-list sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/windows-default-browser-agent getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1732580395222	geckodriver	INFO	Listening on 127.0.0.1:35673
+1732580395282	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "55505" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFTSKDC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732580396536	Marionette	INFO	Marionette enabled
+1732580396942	Marionette	INFO	Listening on port 39049
+WebDriver BiDi listening on ws://127.0.0.1:55505
+Read port: 39049
+1732580397621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js, line 91: Script terminated by timeout at:
+b@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:91:313
+d@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:327:2382
+a/<@https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/zHkjysyKz0l.js:276:197
+
+1732580427812	Marionette	INFO	Stopped listening on port 39049
+console.error: (new AbortError("IndexedDB: main/crash-reports-ondemand getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1732580431616	geckodriver	INFO	Listening on 127.0.0.1:57209
+1732580431689	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "36061" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5PfwnV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732580433091	Marionette	INFO	Marionette enabled
+1732580433509	Marionette	INFO	Listening on port 37501
+WebDriver BiDi listening on ws://127.0.0.1:36061
+Read port: 37501
+1732580434186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iJZT4/yn/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfo3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_HFiR8PB7DLp.js?_nc_eui2=AeFYfZUmFJSMTQH2OQTfERTZV1SVlhhcJqdXVJWWGFwmp5zBNVWotdO3cCTKCHFd1SupjzYVA7tVB3Yrg6Lk-UdU, line 1288: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yl/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDHFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeFFp18PQFAYIttFIL-kOVLwrP6aUMyPEYas_ppQzI8RhiC3vJiuKbsKk4ygwQIISNTrtkOefbEFtYvm4uBwwoWJ, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732580467858	Marionette	INFO	Stopped listening on port 37501
+console.warn: services.settings: main/cookie-banner-rules-list sync interrupted by shutdown
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/password-rules getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1732580880903	geckodriver	INFO	Listening on 127.0.0.1:50995
+1732580880985	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "51799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCL3p8S"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732580882081	Marionette	INFO	Marionette enabled
+1732580882500	Marionette	INFO	Listening on port 35327
+WebDriver BiDi listening on ws://127.0.0.1:51799
+Read port: 35327
+1732580883103	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ipJq4/yg/l/rt/iXTsT147rP4WUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfPaDvjeWuVbao3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_HFiR8PB7DLp.js?_nc_eui2=AeFhvSz2iooQs3HGSZPK7vEIJBy2REHoL-0kHLZEQegv7YZ1ULSIi5175NOFqOSZJP36x4lxIl98zpMxzwMZRtWn, line 1111: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ivb04/yl/l/rt/fPLKmtOS2mxiXTsT147rP4iQZA0P5UoCvWUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-J6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDHFiR8PB7DLpz9TtdK1q1dZR0EYvGLKd1Y3_qwTV3WjC-.js?_nc_eui2=AeFFp18PQFAYIttFIL-kOVLwrP6aUMyPEYas_ppQzI8RhiC3vJiuKbsKk4ygwQIISNTrtkOefbEFtYvm4uBwwoWJ, line 1092: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1732580919288	Marionette	INFO	Stopped listening on port 35327
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 133
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":31,"lineNumber":133,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":30,"lineNumber":266,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":30,"lineNumber":217,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"_validateCollectionSignature","sourceId":28,"lineNumber":1009,"columnNumber":47,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"maybeSync","sourceId":28,"lineNumber":726,"columnNumber":26,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26\n","nativeSavedFrame":{}},"formattedStack":"_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:133:11\nfetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\n_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:133:11|fetch/<@resource://services-settings/Utils.sys.mjs:266:15|fetch@resource://services-settings/Utils.sys.mjs:217:12|_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1009:47|maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:726:26|
+  - prototype Object
+console.warn: services.settings: main/urlbar-persisted-search-terms sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/cookie-banner-rules-list sync interrupted by shutdown
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/password-rules getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1732581209849	geckodriver	INFO	Listening on 127.0.0.1:60633
+1732581209907	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... te" "--remote-debugging-port" "56325" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFsVxdb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732581211129	Marionette	INFO	Marionette enabled
+1732581211528	Marionette	INFO	Listening on port 41065
+WebDriver BiDi listening on ws://127.0.0.1:56325
+Read port: 41065
+1732581212235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i_Ou4/yQ/l/en_GB/bSFmFG5wOuO.js, line 36: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iPmv4/yR/l/rt/iXTsT147rP4WUuJGd98C2FQKzuUjG5I2L9i4MVjjiyveQDBdntLNlXYxhD6ZipreAzy7s_SPQwHMZebPGwKpaZY6nahuzZvqEg-iDyE6_VHFUfo3_jDdOQVPUJ6Z5frcyV6JLlwt4N0Zm-zaCkAxl4CCdoRcUrBhGlkbDxmbA1a84Rz_HFiR8PB7DLpz9TtdK1q1dZ.js?_nc_eui2=AeEEfZ-18u81u1sjk9dRjPncCIV32m_BARoIhXfab8EBGueRhPGbL0lMaCabXZEyFup9avOV3RPbsE4sAE-NxMs0, line 1059: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+1732581247033	Marionette	INFO	Stopped listening on port 41065
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 133
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":31,"lineNumber":133,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":30,"lineNumber":266,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":30,"lineNumber":217,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"timedFetch/<","sourceId":453,"lineNumber":569,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"timedFetch","sourceId":453,"lineNumber":544,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"request","sourceId":453,"lineNumber":634,"columnNumber":33,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"execute","sourceId":453,"lineNumber":2643,"columnNumber":36,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"_fetchChangeset","sourceId":28,"lineNumber":1198,"columnNumber":22,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"_importChanges","sourceId":28,"lineNumber":1060,"columnNumber":18,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"maybeSync","sourceId":28,"lineNumber":749,"columnNumber":35,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"execute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"request@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"timedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"timedFetch/<@resource://services-common/kinto-http-client.sys.mjs:569:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:217:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:569:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:569:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:133:11\nfetch/<@resource://services-settings/Utils.sys.mjs:266:15\nfetch@resource://services-settings/Utils.sys.mjs:217:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:569:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:634:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2643:36\n_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22\n_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:133:11|fetch/<@resource://services-settings/Utils.sys.mjs:266:15|fetch@resource://services-settings/Utils.sys.mjs:217:12|timedFetch/<@resource://services-common/kinto-http-client.sys.mjs:569:12|timedFetch@resource://services-common/kinto-http-client.sys.mjs:544:12|request@resource://services-common/kinto-http-client.sys.mjs:634:33|execute@resource://services-common/kinto-http-client.sys.mjs:2643:36|_fetchChangeset@resource://services-settings/RemoteSettingsClient.sys.mjs:1198:22|_importChanges@resource://services-settings/RemoteSettingsClient.sys.mjs:1060:18|maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:749:35|
+  - prototype Object
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: security-state/cert-revocations sync interrupted by shutdown
+console.warn: services.settings: security-state/intermediates sync interrupted by shutdown
+console.warn: services.settings: security-state/onecrl sync interrupted by shutdown
+console.error: ({details:{id:"2c2bcb35-b5f7-e015-b54f-3d60feccf26d", last_modified:1731438148174, bucket:"main", collection:"password-rules", host:"firefox.settings.services.mozilla.com"}})

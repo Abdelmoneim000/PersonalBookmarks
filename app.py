@@ -1,11 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, send_file, Response
 from flask_socketio import SocketIO
 import threading
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import undetected_chromedriver as uc
 import time
+import requests
 
+
+# Flask setup
 app = Flask(__name__)
 socketio = SocketIO(app)
 
@@ -19,7 +22,7 @@ def setup_driver():
     return uc.Chrome(options=options)
 
 def scrape_instagram(username, password):
-    """Scrapes Instagram saved posts dynamically by scrolling to load all content."""
+    """Scrapes Instagram saved posts dynamically, extracting captions and images from the saved posts page."""
     driver = setup_driver()
     try:
         driver.get("https://www.instagram.com/accounts/login/")
@@ -37,32 +40,43 @@ def scrape_instagram(username, password):
         time.sleep(5)
 
         # Scroll to load all posts
-        saved_posts = set()  # Using a set to avoid duplicates
+        saved_posts_data = {}
         last_height = driver.execute_script("return document.body.scrollHeight")
 
         while True:
-            # Find post links and add them to the set
-            elements = driver.find_elements(By.XPATH, "//article//a")
-            for el in elements:
-                saved_posts.add(el.get_attribute("href"))
+            # Find post containers
+            post_elements = driver.find_elements(By.XPATH, "//article//a[contains(@href, '/p/')]//img")
+
+            for img_element in post_elements:
+                try:
+                    caption = img_element.get_attribute("alt") or "No caption"  # Get the caption from the alt attribute
+                    image_url = img_element.get_attribute("src")  # Get the image URL
+                    post_link = img_element.find_element(By.XPATH, "../../..").get_attribute("href")  # Navigate up to the <a> tag for the link
+
+                    # Add to the dictionary with caption as key
+                    if caption not in saved_posts_data:  # Avoid duplicates
+                        saved_posts_data[caption] = {"image": image_url, "link": post_link}
+                except Exception as e:
+                    print(f"Error processing post: {e}")
 
             # Scroll down
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            time.sleep(5)  # Wait for new content to load
+            time.sleep(5)
 
-            # Check new scroll height and compare it with the last height
+            # Check if we've reached the bottom
             new_height = driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
-                break  # Stop scrolling if no new content is loaded
+                break
             last_height = new_height
 
-        return list(saved_posts)  # Convert set back to list
+        return saved_posts_data
 
     except Exception as e:
         print(f"Error: {e}")
-        return []
+        return {}
     finally:
         driver.quit()
+
 
 
 
@@ -95,6 +109,22 @@ def start_scraping():
     thread.start()
 
     return jsonify({"status": "scraping_started"})
+
+@app.route('/fetch-image/<path:image_url>')
+def fetch_image(image_url):
+    """Fetch image from Instagram and serve it through the Flask server."""
+    try:
+        # Fetch the image from the external URL
+        response = requests.get(image_url, stream=True)
+        if response.status_code == 200:
+            return Response(response.content, mimetype=response.headers['Content-Type'])
+        else:
+            return "Image not found", 404
+    except Exception as e:
+        return f"Error fetching image: {e}", 500
+
+
+
 
 @app.route("/dashboard")
 def dashboard():

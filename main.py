@@ -25,8 +25,8 @@ class FacebookScraper:
             EC.presence_of_element_located((By.ID, "email"))
         )
         self.driver.find_element(By.ID, "email").send_keys(self.username)
-        self.driver.find_element(By.ID, "pass").send_keys(self.password)
-        self.driver.find_element(By.ID, "pass").send_keys(Keys.RETURN)
+        self.driver.find_element(By.ID, "password").send_keys(self.password)
+        self.driver.find_element(By.ID, "password").send_keys(Keys.RETURN)
         time.sleep(10)
 
     def scrape_saved_posts(self):

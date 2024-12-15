@@ -261,6 +261,104 @@ def scrape_facebook(username, password):
         driver.quit()
 
 
+# Twitter Scraper Function
+def scrape_twitter(email, password):
+    """Scrapes bookmarks from Twitter (X)."""
+    driver = setup_driver()
+    results = []
+
+    try:
+        driver.get("https://x.com/i/flow/login")
+        wait = WebDriverWait(driver, 60)
+
+        # Enter email
+        email_field = wait.until(EC.presence_of_element_located((By.NAME, "text")))
+        email_field.send_keys(email)
+        email_field.send_keys(Keys.RETURN)
+        time.sleep(10)
+
+        # Enter password
+        password_field = wait.until(
+            EC.presence_of_element_located((By.NAME, "password"))
+        )
+        password_field.send_keys(password)
+        password_field.send_keys(Keys.RETURN)
+        time.sleep(10)
+
+        # Navigate to bookmarks
+        driver.get("https://x.com/i/bookmarks")
+
+        container = wait.until(
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, "div[aria-label='Timeline: Bookmarks']")
+            )
+        )
+        tweets = container.find_elements(By.TAG_NAME, "article")
+        time.sleep(5)  # Let the tweets load
+
+        for tweet in tweets:
+            result = {
+                "user_link": "",
+                "tweet_link": "",
+                "text": "",
+                "photos": [],
+                "videos": [],
+            }
+
+            # Extract user profile link
+            avatar_container = tweet.find_element(
+                By.CSS_SELECTOR, "div[data-testid='Tweet-User-Avatar']"
+            )
+            result["user_link"] = avatar_container.find_element(
+                By.TAG_NAME, "a"
+            ).get_attribute("href")
+
+            # Extract tweet text
+            text_container = tweet.find_element(
+                By.CSS_SELECTOR, "div[data-testid='tweetText']"
+            )
+            result["text"] = text_container.text
+
+            # Extract tweet link
+            result["tweet_link"] = (
+                tweet.find_element(By.CSS_SELECTOR, "div[data-testid='User-Name'] time")
+                .find_element(By.XPATH, "..")
+                .get_attribute("href")
+            )
+
+            # Extract media (photos/videos)
+            mediums = tweet.find_elements(
+                By.CSS_SELECTOR, "div[data-testid='tweetPhoto']"
+            )
+            for media in mediums:
+                with contextlib.suppress(Exception):
+                    if image := media.find_element(By.TAG_NAME, "img"):
+                        result["photos"].append(
+                            {
+                                "src": image.get_attribute("src"),
+                                "alt": image.get_attribute("alt"),
+                            }
+                        )
+                with contextlib.suppress(Exception):
+                    if video := media.find_element(By.TAG_NAME, "video"):
+                        result["videos"].append(
+                            {
+                                "src": video.get_attribute("src"),
+                                "poster": video.get_attribute("poster"),
+                            }
+                        )
+
+            results.append(result)
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    finally:
+        driver.quit()
+
+    return results
+
+
 # REST API Endpoints
 @app.route("/")
 def health_check():
@@ -279,12 +377,14 @@ def start_scraping():
         return jsonify({"error": "Missing required fields"}), 400
 
     scraped_data = []
-    if platform == "Pinterest":
-        scraped_data = scrape_pinterest(username, password)
+    if platform == "Twitter":
+        scraped_data = scrape_twitter(username, password)
+    elif platform == "Pinterest":
+        scraped_data = scrape_pinterest(username, password)  # Define Pinterest function
     elif platform == "Instagram":
-        scraped_data = scrape_instagram(username, password)  # Define if not already
+        scraped_data = scrape_instagram(username, password)  # Define Instagram function
     elif platform == "Facebook":
-        scraped_data = scrape_facebook(username, password)  # Define if not already
+        scraped_data = scrape_facebook(username, password)  # Define Facebook function
     else:
         return jsonify({"error": "Unsupported platform"}), 400
 

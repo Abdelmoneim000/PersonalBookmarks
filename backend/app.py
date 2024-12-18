@@ -31,17 +31,13 @@ class Pin:
 
 # Utility to set up WebDriver
 def setup_driver():
-    options = webdriver.FirefoxOptions()
+    options = uc.ChromeOptions()
     options.add_argument("start-maximized")
     options.add_argument("disable-infobars")
     options.add_argument("--disable-notifications")
     options.add_argument("disable-popup-blocking")
 
-    options.binary_location = "/run/current-system/sw/bin/firefox"
-    driver = webdriver.Firefox(
-        options=options
-    )  # Replace with appropriate driver (e.g., Chrome or Edge)
-    return driver
+    return uc.Chrome(options=options)
 
 
 def scrape_pinterest(email, password):

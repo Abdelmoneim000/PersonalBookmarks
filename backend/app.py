@@ -1,10 +1,17 @@
 import contextlib
 import time
 from dataclasses import dataclass
+import requests
+import json
+import os
+from dataclasses import asdict
+
+from flask import Flask, jsonify, request, Response, render_template, redirect, url_for
+from flask_socketio import SocketIO
+from flask_cors import CORS
+
 
 import undetected_chromedriver as uc
-from flask import Flask, jsonify, request
-from flask_socketio import SocketIO
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
@@ -12,9 +19,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+
 app = Flask(__name__)
+CORS(app)  # Enable CORS
 socketio = SocketIO(app)
 
+
+
+# Stored scraped data
+scraped_data = {}
 
 @dataclass
 class Pin:
@@ -166,8 +179,10 @@ def scrape_pinterest(email, password):
 
 # Instagram Scraper Function
 def scrape_instagram(username, password):
-    """Scrapes Instagram saved posts dynamically, extracting captions and images from the saved posts page."""
+    """Scrapes Instagram saved posts dynamically, extracting captions, images, and post URLs."""
     driver = setup_driver()
+    scraped_posts = []  # List to store scraped post data as dictionaries
+
     try:
         driver.get("https://www.instagram.com/accounts/login/")
         time.sleep(5)
@@ -176,7 +191,7 @@ def scrape_instagram(username, password):
         driver.find_element(By.NAME, "username").send_keys(username)
         driver.find_element(By.NAME, "password").send_keys(password)
         driver.find_element(By.NAME, "password").send_keys(Keys.RETURN)
-        time.sleep(10)  # Adjust based on load time
+        time.sleep(10)  # Wait for page load
 
         # Navigate to saved posts
         saved_posts_url = f"https://www.instagram.com/{username}/saved/all-posts/"
@@ -184,7 +199,6 @@ def scrape_instagram(username, password):
         time.sleep(5)
 
         # Scroll to load all posts
-        saved_posts_data = {}
         last_height = driver.execute_script("return document.body.scrollHeight")
 
         while True:
@@ -193,17 +207,31 @@ def scrape_instagram(username, password):
 
             for img_element in post_elements:
                 try:
-                    caption = img_element.get_attribute("alt") or "No caption"  # Get the caption from the alt attribute
-                    image_url = img_element.get_attribute("src")  # Get the image URL
-                    post_link = img_element.find_element(By.XPATH, "../../..").get_attribute("href")  # Navigate up to the <a> tag for the link
+                    # Extract required attributes
+                    image_url = img_element.get_attribute("src")  # Image URL
+                    image_alt = img_element.get_attribute("alt") or "No caption"  # Caption from alt attribute
+                    post_link = img_element.find_element(By.XPATH, "../../..").get_attribute("href")  # Post link
 
-                    # Add to the dictionary with caption as key
-                    if caption not in saved_posts_data:  # Avoid duplicates
-                        saved_posts_data[caption] = {"image": image_url, "link": post_link}
+                    # Create a dictionary matching the front-end format
+                    post_data = {
+                        "title": image_alt,  # Title is the same as caption
+                        "description": image_alt,  # Description is also the caption
+                        "image_url": image_url,  # Image URL
+                        "image_alt": image_alt,  # Alt text
+                        "url": post_link  # Post link
+                    }
+
+                    # Avoid duplicates
+                    if post_data not in scraped_posts:
+                        scraped_posts.append(post_data)
+
                 except Exception as e:
                     print(f"Error processing post: {e}")
 
-            # Scroll down
+            if len(scraped_posts) >= 10:  # Limit to 10 posts
+                break
+
+            # Scroll down to load more content
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(5)
 
@@ -213,13 +241,14 @@ def scrape_instagram(username, password):
                 break
             last_height = new_height
 
-        return saved_posts_data
+        return scraped_posts  # Return the list of dictionaries
 
     except Exception as e:
         print(f"Error: {e}")
-        return {}
+        return []
     finally:
         driver.quit()
+
 
 
 # Facebook Scraper Functions
@@ -249,7 +278,7 @@ def scrape_facebook_saved_posts(driver):
                 link = post.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
                 img = post.find_element(By.CSS_SELECTOR, "img").get_attribute("src")
                 results.append({"title": title, "link": link, "image": img})
-                print(f"Extracted data: {title}, {link}, {img}")
+                print(f"Data extracted successfully!!")
             except Exception as e:
                 print(f"Error extracting data: {e}")
 
@@ -367,38 +396,91 @@ def scrape_twitter(email, password):
 
     return results
 
+def load_data_from_json():
+    if os.path.exists("scraper_data.json"):
+        try:
+            with open("scraper_data.json", "r") as f:  # Open in read mode
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading data: {e}")
+    return {}
 
-# REST API Endpoints
+
+def save_data_to_json(data):
+    with open("scraper_data.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+
 @app.route("/")
-def health_check():
-    return jsonify({"status": "API is running"}), 200
+def index():
+    return render_template("index.html")
 
-
-@app.route("/start-scraping", methods=["POST"])
+@app.route("/start-scraping")
 def start_scraping():
-    """Starts scraping based on user inputs."""
-    data = request.json
-    platform = data.get("platform")
-    username = data.get("username")
-    password = data.get("password")
+    return render_template("start_scraping.html")
+
+@app.route("/dashboard", methods=["GET", "POST"])
+def dashboard():
+    global scraper_data  # Reference the global variable
+    if request.method == "POST":
+        search_query = request.form.get("search_query")
+        if search_query:
+            # Filter data based on search query
+            filtered_data = {
+                platform: [pin for pin in pins if search_query.lower() in str(pin).lower()]
+                for platform, pins in scraper_data.items()
+            }
+        else:
+            filtered_data = scraper_data
+        return render_template("dashboard.html", data=filtered_data)
+    
+    # Load data into the global variable
+    scraper_data = load_data_from_json()
+    return render_template("dashboard.html", data=scraper_data)
+
+
+@app.route("/scrape", methods=["POST"])
+def scrape_and_render():
+    platform = request.form.get("platform")
+    username = request.form.get("username")
+    password = request.form.get("password")
 
     if not platform or not username or not password:
-        return jsonify({"error": "Missing required fields"}), 400
+        return render_template("start_scraping.html", error="Missing required fields")
 
-    scraped_data = []
+    # Perform scraping based on platform
     if platform == "Twitter":
-        scraped_data = scrape_twitter(username, password)
+        pins = scrape_twitter(username, password)
     elif platform == "Pinterest":
-        scraped_data = scrape_pinterest(username, password)  # Define Pinterest function
+        pins = scrape_pinterest(username, password)
     elif platform == "Instagram":
-        scraped_data = scrape_instagram(username, password)  # Define Instagram function
+        pins = scrape_instagram(username, password)
     elif platform == "Facebook":
-        scraped_data = scrape_facebook(username, password)  # Define Facebook function
+        pins = scrape_facebook(username, password)
     else:
-        return jsonify({"error": "Unsupported platform"}), 400
+        return render_template("start_scraping.html", error="Unsupported platform")
 
-    return jsonify({"platform": platform, "data": scraped_data}), 200
+    # Update the global scraped_data dictionary
+    global scraped_data
+    scraped_data[platform] = pins
 
+    # Save the data to a JSON file
+    save_data_to_json(scraped_data)
+
+    # Redirect to the dashboard
+    return redirect(url_for("dashboard"))
+
+@app.route('/fetch-image/<path:image_url>')
+def fetch_image(image_url):
+    """Fetch image from Instagram and serve it through the Flask server."""
+    try:
+        response = requests.get(image_url, stream=True)
+        if response.status_code == 200:
+            return Response(response.content, mimetype=response.headers['Content-Type'])
+        else:
+            return "Image not found", 404
+    except Exception as e:
+        return f"Error fetching image: {e}", 500
 
 if __name__ == "__main__":
     app.run(debug=True)

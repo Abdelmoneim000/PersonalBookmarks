@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Scraper Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-between mb-4">
+            <div class="col-auto">
+                <h1>Social Media Scraper Dashboard</h1>
+            </div>
+            <div class="col-auto">
+                <a href="{{ url_for('index') }}" class="btn btn-primary">Home</a>
+                <a href="{{ url_for('start_scraping') }}" class="btn btn-primary">Start Scraping</a>
+            </div>
+        </div>
+        <form action="{{ url_for('dashboard') }}" method="post" class="mb-4">
+            <div class="input-group">
+                <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Search by title or caption">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+        {% if data|length == 0 %}
+        <div class="alert alert-info">No data found. Please start scraping first.</div>
+        {% else %}
+        {% for platform, pins in data.items() %}
+        <h2>{{ platform }}</h2>
+        <div class="row">
+            {% for pin in pins %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    {% if pin.image_url %}
+                    <img src="{{ url_for('fetch_image', image_url=pin.image_url) }}" class="card-img-top" alt="{{ pin.image_alt or 'N/A' }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pin.title or 'N/A' }}</h5>
+                        <p class="card-text">{{ pin.description or 'N/A' }}</p>
+                        <a href="{{ pin.url }}" class="btn btn-primary">View Post</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>

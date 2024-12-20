@@ -428,7 +428,7 @@ def dashboard():
             # Filter data based on search query
             filtered_data = {
                 platform: [pin for pin in pins if search_query.lower() in str(pin).lower()]
-                for platform, pins in scraper_data.items()
+                for platform, pins in scraped_data.items()
             }
         else:
             filtered_data = scraper_data

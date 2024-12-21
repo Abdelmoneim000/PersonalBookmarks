@@ -30,7 +30,7 @@
                 <a href="{{ url_for('start_scraping') }}" class="btn btn-primary">Start Scraping</a>
             </div>
         </div>
-        <form action="{{ url_for('dashboard') }}" method="get" class="mb-4">
+        <form action="{{ url_for('dashboard') }}" method="post" class="mb-4">
             <div class="input-group">
                 <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Search by title or caption">
                 <div class="input-group-append">

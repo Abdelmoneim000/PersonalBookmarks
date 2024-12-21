@@ -1,17 +1,14 @@
 import contextlib
-import time
-from dataclasses import dataclass
-import requests
 import json
 import os
-from dataclasses import asdict
+import time
+from dataclasses import asdict, dataclass
 
-from flask import Flask, jsonify, request, Response, render_template, redirect, url_for
-from flask_socketio import SocketIO
-from flask_cors import CORS
-
-
+import requests
 import undetected_chromedriver as uc
+from flask import Flask, Response, jsonify, redirect, render_template, request, url_for
+from flask_cors import CORS
+from flask_socketio import SocketIO
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
@@ -19,15 +16,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 socketio = SocketIO(app)
 
 
-
 # Stored scraped data
 scraped_data = {}
+
 
 @dataclass
 class Pin:
@@ -44,13 +40,14 @@ class Pin:
 
 # Utility to set up WebDriver
 def setup_driver():
-    options = uc.ChromeOptions()
-    options.add_argument("start-maximized")
-    options.add_argument("disable-infobars")
-    options.add_argument("--disable-notifications")
-    options.add_argument("disable-popup-blocking")
-
-    return uc.Chrome(options=options)
+    # options = uc.ChromeOptions()
+    # options.add_argument("start-maximized")
+    # options.add_argument("disable-infobars")
+    # options.add_argument("--disable-notifications")
+    # options.add_argument("disable-popup-blocking")
+    # options.binary_location = "/run/current-system/sw/bin/brave"
+    #
+    return webdriver.Firefox()
 
 
 def scrape_pinterest(email, password):
@@ -74,27 +71,23 @@ def scrape_pinterest(email, password):
         login_button.click()
 
         wait.until(
-            EC.element_to_be_clickable(
-                (By.CSS_SELECTOR, "div[data-test-id='header-profile']")
-            )
+             EC.element_to_be_clickable((By.CSS_SELECTOR, "div[data-test-id='header-profile']"))
         ).click()
 
-        wait.until(
-            EC.element_to_be_clickable((By.XPATH, "//h2[text()='All Pins']"))
-        ).click()
 
-        wait.until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-test-id='pin']"))
-        )
+        driver.get(f"{driver.current_url}_pins/")
+
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-test-id='pin']")))
         pins = [
             pin.find_element(By.TAG_NAME, "a").get_attribute("href")
             for pin in driver.find_elements(By.CSS_SELECTOR, "div[data-test-id='pin']")
         ]
 
+        results = []
         for pin in pins:
             wait = WebDriverWait(driver, 2)  # don't move this outside
-            driver.get(pin)
-
+            driver.get(pin)  # type: ignore
+            
             pin_url = driver.current_url
             pin_title = None
             description = None
@@ -107,22 +100,18 @@ def scrape_pinterest(email, password):
 
             with contextlib.suppress(TimeoutException):
                 pin_title = wait.until(
-                    EC.element_to_be_clickable(
-                        (By.CSS_SELECTOR, "div[itemprop='name']")
-                    )
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "div[itemprop='name']"))
                 ).text
 
             with contextlib.suppress(TimeoutException):
                 description = wait.until(
                     EC.presence_of_element_located(
-                        (
-                            By.CSS_SELECTOR,
-                            "span[data-test-id='richPinInformation-description']",
-                        )
+                        (By.CSS_SELECTOR, "span[data-test-id='richPinInformation-description']")
                     )
                 ).text
                 description = description.replace("\n ...more", "")
 
+            # high quality images are presented last in the dom
             for img in reversed(
                 driver.find_elements(
                     By.CSS_SELECTOR, "div[data-test-id='visual-content-container'] img"
@@ -135,8 +124,7 @@ def scrape_pinterest(email, password):
 
             for video in reversed(
                 driver.find_elements(
-                    By.CSS_SELECTOR,
-                    "div[data-test-id='visual-content-container'] video",
+                    By.CSS_SELECTOR, "div[data-test-id='visual-content-container'] video"
                 )
             ):
                 if video.get_attribute("src"):
@@ -154,27 +142,43 @@ def scrape_pinterest(email, password):
                     By.CSS_SELECTOR, "div[data-test-id='reactions-count-button']"
                 ).text
 
-            pins_list.append(
-                Pin(
-                    title=pin_title,
-                    url=pin_url,
-                    description=description,
-                    image_url=image_url,
-                    image_alt=image_alt,
-                    by=by,
-                    likes=likes,
-                    video_src=video_src,
-                    video_poster=video_poster,
-                )
+            # pins_list.append(
+            #     # Pin(
+            #     #     title=pin_title,
+            #     #     url=pin_url,
+            #     #     description=description,
+            #     #     image_url=image_url,
+            #     #     image_alt=image_alt,
+            #     #     by=by,
+            #     #     likes=likes,
+            #     #     video_src=video_src,
+            #     #     video_poster=video_poster,
+            #     # )
+                
+            # )
+            results.append(
+                {
+                        "title": pin_title,
+                        "image_url": image_url,
+                        "url": pin_url,
+                        "caption": description,
+                        "image_alt": image_alt,
+                        "by": by,
+                        "likes": likes,
+                        "video_src": video_src,
+                        "video_poster": video_poster
+                }
             )
 
+            print("Pin",results)
+        return results    
     except Exception as e:
         print(f"Error: {e}")
 
     finally:
         driver.quit()
 
-    return [pin.__dict__ for pin in pins_list]
+    return results
 
 
 # Instagram Scraper Function
@@ -203,14 +207,20 @@ def scrape_instagram(username, password):
 
         while True:
             # Find post containers
-            post_elements = driver.find_elements(By.XPATH, "//article//a[contains(@href, '/p/')]//img")
+            post_elements = driver.find_elements(
+                By.XPATH, "//article//a[contains(@href, '/p/')]//img"
+            )
 
             for img_element in post_elements:
                 try:
                     # Extract required attributes
                     image_url = img_element.get_attribute("src")  # Image URL
-                    image_alt = img_element.get_attribute("alt") or "No caption"  # Caption from alt attribute
-                    post_link = img_element.find_element(By.XPATH, "../../..").get_attribute("href")  # Post link
+                    image_alt = (
+                        img_element.get_attribute("alt") or "No caption"
+                    )  # Caption from alt attribute
+                    post_link = img_element.find_element(
+                        By.XPATH, "../../.."
+                    ).get_attribute("href")  # Post link
 
                     # Create a dictionary matching the front-end format
                     post_data = {
@@ -218,7 +228,7 @@ def scrape_instagram(username, password):
                         "description": image_alt,  # Description is also the caption
                         "image_url": image_url,  # Image URL
                         "image_alt": image_alt,  # Alt text
-                        "url": post_link  # Post link
+                        "url": post_link,  # Post link
                     }
 
                     # Avoid duplicates
@@ -250,7 +260,6 @@ def scrape_instagram(username, password):
         driver.quit()
 
 
-
 # Facebook Scraper Functions
 def login_to_facebook(driver, username, password):
     """Logs into Facebook."""
@@ -276,9 +285,25 @@ def scrape_facebook_saved_posts(driver):
             try:
                 title = post.find_element(By.CSS_SELECTOR, "span[dir='auto'] span").text
                 link = post.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
-                img = post.find_element(By.CSS_SELECTOR, "img").get_attribute("src")
-                results.append({"title": title, "link": link, "image": img})
-                print(f"Data extracted successfully!!")
+                image_url = post.find_element(By.CSS_SELECTOR, "img").get_attribute(
+                    "src"
+                )
+                # post_data = {
+                #         "title": image_alt,  # Title is the same as caption
+                #         "description": image_alt,  # Description is also the caption
+                #         "image_url": image_url,  # Image URL
+                #         "image_alt": image_alt,  # Alt text
+                #         "url": post_link,  # Post link
+                # }
+                results.append(
+                    {
+                        "title": title,
+                        "image_url": image_url,
+                        "url": link,
+                    }
+                )
+                # results.append({"title": title, "link": link, "image_url": image_url})
+                print(f"Extracted data for post: {title}, {link}, {image_url}")
             except Exception as e:
                 print(f"Error extracting data: {e}")
 
@@ -335,58 +360,43 @@ def scrape_twitter(email, password):
         time.sleep(5)  # Let the tweets load
 
         for tweet in tweets:
-            result = {
-                "user_link": "",
-                "tweet_link": "",
-                "text": "",
-                "photos": [],
-                "videos": [],
-            }
-
-            # Extract user profile link
-            avatar_container = tweet.find_element(
-                By.CSS_SELECTOR, "div[data-testid='Tweet-User-Avatar']"
-            )
-            result["user_link"] = avatar_container.find_element(
-                By.TAG_NAME, "a"
-            ).get_attribute("href")
+            title = ""
+            link = ""
+            image_url = []
 
             # Extract tweet text
-            text_container = tweet.find_element(
-                By.CSS_SELECTOR, "div[data-testid='tweetText']"
-            )
-            result["text"] = text_container.text
+            with contextlib.suppress(Exception):
+                text_container = tweet.find_element(
+                    By.CSS_SELECTOR, "div[data-testid='tweetText']"
+                )
+                title = text_container.text
 
             # Extract tweet link
-            result["tweet_link"] = (
-                tweet.find_element(By.CSS_SELECTOR, "div[data-testid='User-Name'] time")
-                .find_element(By.XPATH, "..")
-                .get_attribute("href")
-            )
+            with contextlib.suppress(Exception):
+                link = (
+                    tweet.find_element(
+                        By.CSS_SELECTOR, "div[data-testid='User-Name'] time"
+                    )
+                    .find_element(By.XPATH, "..")
+                    .get_attribute("href")
+                )
 
-            # Extract media (photos/videos)
-            mediums = tweet.find_elements(
-                By.CSS_SELECTOR, "div[data-testid='tweetPhoto']"
-            )
-            for media in mediums:
-                with contextlib.suppress(Exception):
-                    if image := media.find_element(By.TAG_NAME, "img"):
-                        result["photos"].append(
-                            {
-                                "src": image.get_attribute("src"),
-                                "alt": image.get_attribute("alt"),
-                            }
-                        )
-                with contextlib.suppress(Exception):
-                    if video := media.find_element(By.TAG_NAME, "video"):
-                        result["videos"].append(
-                            {
-                                "src": video.get_attribute("src"),
-                                "poster": video.get_attribute("poster"),
-                            }
-                        )
+            # Extract media (photos)
+            with contextlib.suppress(Exception):
+                mediums = tweet.find_elements(
+                    By.CSS_SELECTOR, "div[data-testid='tweetPhoto'] img"
+                )
+                for media in mediums:
+                    image_url.append(media.get_attribute("src"))
 
-            results.append(result)
+            # Append result
+            results.append(
+                {
+                    "title": title,
+                    "image_url": image_url,
+                    "url": link,
+                }
+            )
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -395,6 +405,7 @@ def scrape_twitter(email, password):
         driver.quit()
 
     return results
+
 
 def load_data_from_json():
     if os.path.exists("scraper_data.json"):
@@ -407,17 +418,20 @@ def load_data_from_json():
 
 
 def save_data_to_json(data):
-    with open("scraper_data.json", "w") as f:
+    with open("./scraper_data.json", "w") as f:
         json.dump(data, f, indent=4)
+        print("Data saved to scraper_data.json")
 
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+
 @app.route("/start-scraping")
 def start_scraping():
     return render_template("start_scraping.html")
+
 
 @app.route("/dashboard", methods=["GET", "POST"])
 def dashboard():
@@ -427,13 +441,15 @@ def dashboard():
         if search_query:
             # Filter data based on search query
             filtered_data = {
-                platform: [pin for pin in pins if search_query.lower() in str(pin).lower()]
+                platform: [
+                    pin for pin in pins if search_query.lower() in str(pin).lower()
+                ]
                 for platform, pins in scraped_data.items()
             }
         else:
             filtered_data = scraper_data
         return render_template("dashboard.html", data=filtered_data)
-    
+
     # Load data into the global variable
     scraper_data = load_data_from_json()
     return render_template("dashboard.html", data=scraper_data)
@@ -470,17 +486,19 @@ def scrape_and_render():
     # Redirect to the dashboard
     return redirect(url_for("dashboard"))
 
-@app.route('/fetch-image/<path:image_url>')
+
+@app.route("/fetch-image/<path:image_url>")
 def fetch_image(image_url):
     """Fetch image from Instagram and serve it through the Flask server."""
     try:
         response = requests.get(image_url, stream=True)
         if response.status_code == 200:
-            return Response(response.content, mimetype=response.headers['Content-Type'])
+            return Response(response.content, mimetype=response.headers["Content-Type"])
         else:
             return "Image not found", 404
     except Exception as e:
         return f"Error fetching image: {e}", 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
